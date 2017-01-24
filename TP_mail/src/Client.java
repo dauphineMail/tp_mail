@@ -10,7 +10,7 @@ public class Client
     // instance variables - replace the example below with your own
     private int numeroCompte;
     private double solde;
-    private Agence banqueCompte;
+	private Agence banqueCompte;
 
     /**
      * Constructor for objects of class CompteClient
@@ -22,6 +22,12 @@ public class Client
         this.setSolde(solde);
         this.setBanqueCompte(banqueCompte);
         
+    }
+    public void debiter(double solde){
+    	this.solde-=solde;
+    }
+    public void crediter(double solde){
+    	this.solde+=solde;
     }
 
 	public int getNumeroCompte() {

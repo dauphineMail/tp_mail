@@ -1,7 +1,5 @@
-
 public class Banque {
 	private String idBanque;
-	
 
 	public Banque(String idBanque) {
 		this.idBanque = idBanque;
@@ -14,7 +12,5 @@ public class Banque {
 	public void setIdBanque(String idBanque) {
 		this.idBanque = idBanque;
 	}
-	
-	
 
 }
