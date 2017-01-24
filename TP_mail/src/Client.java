@@ -18,11 +18,35 @@ public class Client
     public Client(int numeroCompte,double solde,Agence banqueCompte)
     {
         // initialise instance variables
-        this.numeroCompte=numeroCompte;
-        this.solde=solde;
-        this.banqueCompte=banqueCompte;
+        this.setNumeroCompte(numeroCompte);
+        this.setSolde(solde);
+        this.setBanqueCompte(banqueCompte);
         
     }
+
+	public int getNumeroCompte() {
+		return numeroCompte;
+	}
+
+	public void setNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
+	}
+
+	public double getSolde() {
+		return solde;
+	}
+
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+
+	public Agence getBanqueCompte() {
+		return banqueCompte;
+	}
+
+	public void setBanqueCompte(Agence banqueCompte) {
+		this.banqueCompte = banqueCompte;
+	}
 
     /**
      * An example of a method - replace this comment with your own

@@ -43,7 +43,7 @@ public class BanqueTest
     @Test
     public void testChangerNomBanque()
     {
-        Agence banque1 = new Agence(250, "SGP",  "75 Paris");
+        Agence banque1 = new Agence(250, "SGP",  "75 Paris",null);
         banque1.changerNomBanque("ParisBas");
     }
 }

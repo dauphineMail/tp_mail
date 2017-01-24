@@ -8,23 +8,24 @@
 import java.util.ArrayList;
 public class Agence
 {
-    private int idBanque;
+    private int idAgence;
     private String nomBanque;
     private String adresseBanque;
+    private Banque banque;
     ArrayList<Client> listeClient;
     
     
     /**
      * Constructor for objects of class Banque
      */
-    public Agence(int id,String nomBanque,String adresseBanque)
+    public Agence(int id,String nomBanque,String adresseBanque,Banque banque)
     {
         // initialise instance variables
-        this.idBanque=id;
+        this.setIdAgence(id);
         this.nomBanque=nomBanque;
         this.adresseBanque=adresseBanque;
         listeClient=new ArrayList<>();
-       
+        this.banque=banque;     
     }
     
     public String getNomBanque(){
@@ -43,6 +44,14 @@ public class Agence
     public void changerNomBanque(String nom){
         this.nomBanque=nom;
     }
+
+	public int getIdAgence() {
+		return idAgence;
+	}
+
+	public void setIdAgence(int idAgence) {
+		this.idAgence = idAgence;
+	}
 
     /**
      * An example of a method - replace this comment with your own
