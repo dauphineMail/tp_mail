@@ -12,7 +12,7 @@ public class Agence {
 	private String nomBanque;
 	private String adresseBanque;
 	private Banque banque;
-	ArrayList<Client> listeClient;
+	private ArrayList<Client> listeClient;
 
 	/**
 	 * Constructor for objects of class Banque
@@ -80,6 +80,13 @@ public class Agence {
 	public void setBanque(Banque banque) {
 		this.banque = banque;
 	}
+	public ArrayList<Client> getListeClient() {
+		return listeClient;
+	}
+	public void setListeClient(ArrayList<Client> listeClient) {
+		this.listeClient = listeClient;
+	}
+	
 
 	/**
 	 * An example of a method - replace this comment with your own

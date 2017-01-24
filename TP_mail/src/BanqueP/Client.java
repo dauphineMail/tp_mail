@@ -12,6 +12,8 @@ public class Client
     private int numeroCompte;
     private double solde;
 	private Agence banqueCompte;
+	private String nom;
+	private String prenom;
 
     /**
      * Constructor for objects of class CompteClient
