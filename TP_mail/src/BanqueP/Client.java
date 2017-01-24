@@ -1,3 +1,4 @@
+package BanqueP;
 
 /**
  * Write a description of class CompteClient here.
